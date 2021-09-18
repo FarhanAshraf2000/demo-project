@@ -1,0 +1,29 @@
+void main() {
+  num a= 100;
+  num b= 60;
+  num c= 80;
+  num d= 70;
+  num e= 80;
+  
+  num total= a+b+c+d+e;
+  num per = total/500*100;
+  if (total > 500 || total < 0){
+    print("The marks that you have Entered are not Valid :");
+  }else if (per>=90 && per <=100 ){
+    print("percentage : ${per} \nyour grade is A+ \nyour total marks are :${total}");
+  }else if (per>=80 && per <=90 ){
+    print("percentage : ${per} \nyour grade is A+ \nyour total marks are :${total}");
+  }else if (per>=70 && per <=80 ){
+    print("percentage : ${per} \nyour grade is A \nyour total marks are :${total}");
+  }else if (per>=60 && per <=70 ){
+    print("percentage : ${per} \nyour grade is B \nyour total marks are :${total}");
+  }else if (per>=50 && per <=60 ){
+    print("percentage : ${per} \nyour grade is C \nyour total marks are :${total}");
+  }else if (per>=40 && per <=50 ){
+    print("percentage : ${per} \nyour grade is D \nyour total marks are :${total}");
+  }else if (per==0){
+    print("percentage : ${per} \nyou have failed in this Semester  \nyour total marks are :${total}");
+  }else{
+    print("Your marks are not enough to calculate the percentage ");
+  }
+}
